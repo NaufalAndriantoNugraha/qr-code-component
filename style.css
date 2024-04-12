@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,33 +16,36 @@ img {
 .qr-component {
   width: 320px;
   height: 497px;
+  margin: 152px auto;
+  background-color: #fff;
   border-radius: 20px;
-  margin: 100px auto;
-  background-color: white;
+  padding: 16px;
 }
 
 .qr-component img {
-  border-radius: 10px;
-  width: 288px;
-  height: 288px;
-  margin: 15px;
+  border-radius: 16px;
 }
 
 .description {
-  width: 288px;
-  height: 129px;
-  margin: 15px;
-  text-align: center;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.description .heading {
-  color: #1f314f;
+.description h1 {
   font-size: 22px;
-  font-weight: bold;
+  text-align: center;
+  color: #1f314f;
+  font-weight: 700;
 }
 
-.description .message {
+.description p {
   font-size: 15px;
   color: #7d889e;
-  padding: 0 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 16px;
+  width: 256px;
+  height: 57px;
 }
